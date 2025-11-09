@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Top 5 Personal Values</title>
   <style>
+    /* Base & layout */
     body {
       font-family: 'Segoe UI', sans-serif;
+      font-size: 18px; /* larger base size for readability */
       background-color: #fdfdfd;
       margin: 0;
       padding: 0;
+      color: #222;
     }
+    main {
+      padding: 20px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header / title */
     header {
       background-color: #9bc3ec;
       color: white;
@@ -20,6 +31,8 @@
     header .site-title {
       display: inline-block;
       position: relative;
+      font-size: 2.2rem; /* larger title size, similar to page2 */
+      line-height: 1.1;
     }
     header .site-title::after {
       content: "";
@@ -34,17 +47,17 @@
     header .site-title:hover::after {
       width: 100%;
     }
-    main {
-      padding: 20px 45px;
-    }
+
+    /* Headings, paragraphs and lists */
     h2 {
+      font-size: 1.4rem; /* larger section headings */
       color: #a8cef4;
       margin-top: 35px;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.125rem; /* slightly larger body text */
       line-height: 1.6;
-      color: #d7d4d4;
+      color: #333;
     }
     ul {
       margin-top: 15px;
@@ -53,24 +66,27 @@
     li {
       margin-bottom: 10px;
     }
+
+    /* Image: larger but responsive */
     img {
       display: block;
       margin: 35px auto;
-      max-width: 425px;
+      width: 100%;
+      max-width: 640px; /* larger max width */
       border-radius: 8px;
     }
+
     footer {
       background-color: #ecf0f1;
       text-align: center;
       padding: 15px;
       font-size: 0.9em;
-  
     }
   </style>
 </head>
 <body>
   <header>
-    <h3 class="site-title">My Top 5 Personal Values</h3>
+    <h1 class="site-title">My Top 5 Personal Values</h1>
     <p>by Royce • Fall 2025</p>
   </header>
   <main>
@@ -111,7 +127,9 @@
       <li>Maturity is the thread that weaves together authenticity, determination, diligence, and kindness—it’s how I show up with wisdom and balance.</li>
     </ul>
 
-    <p><a href="page2.html">→ Learn more about why these values matter</a></p>
+    <nav>
+      <p><a href="industry.html">→ Learn about my role in the semiconductor industry!</a></p>
+    </nav>
   </main>
   <footer>
     &copy; 2025 Royce's Core Values
